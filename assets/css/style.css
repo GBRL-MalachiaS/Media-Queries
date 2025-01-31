@@ -1,0 +1,25 @@
+/* Reset configurações */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container-topo{
+    background-color: red;
+}
+/* Estilos do menu de navegação */
+
+@media screen and (min-width:700px) and (max-width:1140px) {
+    
+}
+
+@media screen and (min-width:700px) and (max-width:1140px){
+
+}
+
+@media screen and (min-width:700px) and (max-width:1140px) {
+    .container-topo{
+        background-color: blue;
+    }    
+}
