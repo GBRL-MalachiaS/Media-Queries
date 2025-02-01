@@ -11,8 +11,8 @@
     width: 1024px;
 }
 
- /* Conteudo do cabeçalho */
- header {
+/* Conteudo do cabeçalho */
+header {
     display: flex;
     justify-content: center;
     background-color: #00cad1;
@@ -38,42 +38,65 @@
     text-decoration: none;
     color: #fff;
     font-weight: bold;
+    text-shadow: 1px 1px 1px black;
 
 }
 
-.banner{
-    background-image: url('../img/recepcao2.jpg');
+.banner {
+    background-image: url('../img/recepcao.png');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position:center;
-    height:340px;
+    background-position: center;
     display: flex;
     align-items: center;
+    justify-content: center;
+
 }
-.banner h2{
-    width: 350px;
+
+.link-topo:active {
+    background-color: #fff;
+    text-shadow: 1px 1px 1px black;
+    border-radius: 250px
+}
+
+.banner-titulo h2 {
+    text-align: justify;
     color: #fff;
-    font-size: large;
+    font-weight: normal;
 }
 
 
 /* Aplica estilos para as telas maiores que 1024px */
 @media only screen and (min-width:1024px) {
+
     /* Pseudo elemento */
-    .link-topo:hover{
+    .link-topo:hover {
         border-bottom: 2px solid #fff;
     }
 
-    .link-topo:active {
-        background-color: #fff;
-        text-shadow: 1px 1px 1px black;
-        border-radius: 250px
+    .banner {
+        height: 500px;
     }
-    
 
+    .banner-titulo h2 {
+        width: 600px;
+        font-size: 44px;
+
+    }
 }
 
+@media only screen and (min-width: 476px) and (max-width: 1023px) {
 
+    .banner {
+        height: 350px;
+    }
+
+    .banner-titulo h2 {
+        width: 450px;
+        font-size: 32px;
+    }
+
+}
 
 /* Media Querie para navegação Mobile */
 @media only screen and (max-width: 475px) {
@@ -94,10 +117,13 @@
         margin: 5px;
     }
 
-    .link-topo:active {
-        background-color: #fff;
-        text-shadow: 1px 1px 1px black;
-        border-radius: 250px
+    .banner {
+        height: 300px;
+    }
+
+    .banner-titulo h2 {
+        width: 350px;
+        font-size: 26px;
     }
 
 }
