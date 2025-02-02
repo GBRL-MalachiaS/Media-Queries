@@ -42,6 +42,14 @@ header {
 
 }
 
+.link-topo:active {
+    background-color: #fff;
+    border-radius: 250px
+}
+
+
+/* Estilos do Banner topo padrão */
+
 .banner {
     background-image: url('../img/recepcao.png');
     background-repeat: no-repeat;
@@ -53,27 +61,57 @@ header {
 
 }
 
-.link-topo:active {
-    background-color: #fff;
-    text-shadow: 1px 1px 1px black;
-    border-radius: 250px
-}
-
+/* Estilo titulo padrão */
 .banner-titulo h2 {
     text-align: justify;
     color: #fff;
     font-weight: normal;
 }
 
+/* Estilos do container sobre */
+.sobre {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.sobre-titulo {
+    width: 700px;
+    text-align: center;
+}
+
+.sobre-titulo h3 {
+    padding: 20px;
+    color: #4c4c4d;
+    font-weight: bold;
+}
+
+.sobre-titulo p {
+    line-height: 25px;
+    color: #6d6f70;
+}
+
+.lista{
+    display: flex;
+    align-items: center;
+}
+
+.lista li{
+    line-height: 30px;
+}
+
 
 /* Aplica estilos para as telas maiores que 1024px */
 @media only screen and (min-width:1024px) {
 
-    /* Pseudo elemento */
+    /* Pseudo elemento p/ desktop */
     .link-topo:hover {
         border-bottom: 2px solid #fff;
     }
 
+    /* estilos do banner para desktop */
     .banner {
         height: 500px;
     }
@@ -85,8 +123,10 @@ header {
     }
 }
 
+/* Media queries para tablets */
 @media only screen and (min-width: 476px) and (max-width: 1023px) {
 
+    /* Estilos do banner para tablets */
     .banner {
         height: 350px;
     }
@@ -102,10 +142,12 @@ header {
 @media only screen and (max-width: 475px) {
     /* Conteudo do cabeçalho */
 
+    /* Ajusta o container para coluna */
     .container-topo {
         flex-direction: column;
     }
 
+    /* Define uma borda para separar a imagem do nav */
     .nav-topo {
         border-top: 2px #636262 solid;
         padding: 20px;
@@ -117,6 +159,7 @@ header {
         margin: 5px;
     }
 
+    /* Define os estilos do banner ppara mobile */
     .banner {
         height: 300px;
     }
