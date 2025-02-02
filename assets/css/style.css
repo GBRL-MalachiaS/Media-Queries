@@ -93,12 +93,12 @@ header {
     color: #6d6f70;
 }
 
-.lista{
+.lista {
     display: flex;
     align-items: center;
 }
 
-.lista li{
+.lista li {
     line-height: 30px;
 }
 
